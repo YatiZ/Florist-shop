@@ -1,0 +1,116 @@
+{%extends "parent.html" %}
+{%block content%}
+<style>
+    body{
+        background-image: url("https://bit.ly/3xJCOwD");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+    .container1{
+        display: inline;
+        
+        
+    }
+    .box1{
+        display: inline-flex;
+    }
+    h1{
+        text-align: center;
+        margin-top: 30px;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 50px;
+        color: white;
+    }
+    img{
+        width: 500px;
+       
+    }
+    .list-group{
+        margin-top: 100px;
+        width: 200px;
+        height: 20%;
+        margin-left: 100px;
+    }
+    .annimation {
+        border-radius: 10px;
+        border: 3px black solid;
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 300px;
+        height: 300px;
+        background-size: 300px;
+        background-image: url("https://bit.ly/3qXEuPe");
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-image: url("https://bit.ly/3qXEuPe"); left:0px; top:0px;}
+  25%  {background-image: url("https://bit.ly/3xGgmol"); left:200px; top:0px;}
+  50%  {background-image:url("https://bit.ly/3f2iL69"); left:200px; top:200px;}
+  75%  {background-image: url("https://bit.ly/3xGgELX"); left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+<body>
+    <div class="container1">
+        
+        <h1>WELCOME TO HEAVEN </h1>
+        
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Floral Info</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bouquet-Types
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Special Bouquet</a></li>
+                      <li><a class="dropdown-item" href="#">Simple Bouquet</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About Promotion</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Contact us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="......" aria-label="Search">
+                  <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <div class="box1">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Cascade Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Posy Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Hand-Tied Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Round Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Nosegay Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Pomander Bouquet.</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Composite Bouquet</a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+          </div>
+        <div class="annimation"></div>
+        </div>
+    </div>
+</body>
+{%endblock%}

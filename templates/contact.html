@@ -1,0 +1,51 @@
+{%extends "parent.html" %}
+{%block content%}
+<style>
+    body{
+        background-image: url("https://bit.ly/3QZE8Cf");
+        background-size:100%;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+    h1{
+        text-align: center;
+        color: palevioletred;
+        margin-top: 15px;
+    }
+    p{
+        text-align: center;
+        color: palevioletred;
+    }
+    .form{
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 30px;
+        
+        
+    }
+    
+    .container{
+        width: 500px;
+        border: 3px dotted  palevioletred;
+        margin-top: 180px;
+        height: 520px;
+        background-color: rgba(127, 227, 255, 0.453);
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>CONTACT US</h1>
+
+    <p>Email us with any questions or inquires or call 09238429462. 
+        We would be happy to answer your questions and set up a meeting with you.
+    </p>
+    <form class="form">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name"><br>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
+        
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="message"></textarea><br>
+        <button type="button" class="btn btn-primary" style="margin-left: 300px;width: 100px;">SEND </button>
+    </form>
+</div>
+</body>
+{%endblock%}
